@@ -7,14 +7,16 @@ import * as Plugin from "./quartz/plugins"
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
 const config: QuartzConfig = {
+  // 1.一般配置，全项目中生效
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🪴 知识地图",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-CN",
+    // 这通常是您网站的已部署URL（例如，此网站的quartz.jzhao.xyz）。不要包含协议（即https://）或任何前导或尾随斜杠。
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
@@ -50,7 +52,9 @@ const config: QuartzConfig = {
       },
     },
   },
+  // 2.插件配置。您可以将Quartz插件视为对内容的一系列转换
   plugins: {
+    // 映射内容（例如，解析前沿内容、生成描述）
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
@@ -70,7 +74,9 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
+    // 过滤内容（例如过滤掉草稿）
     filters: [Plugin.RemoveDrafts()],
+    // 减少过度内容（例如，创建RSS提要或列出带有特定标签的所有文件的页面）
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
