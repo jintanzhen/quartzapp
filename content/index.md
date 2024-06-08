@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz
+title: 欢迎使用我的知识地图
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+这是一个基于quartz构建的知识地图，它的主题包括如下几个方面：
+* [[web开发技术]]
+* 数据平台开发技术
+* 数据产品开发技术
+
+它的语法遵循obsibian on markdown，希望你能得到你需要的知识。

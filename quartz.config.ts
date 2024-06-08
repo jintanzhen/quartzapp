@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   // 1.一般配置，全项目中生效
   configuration: {
-    pageTitle: "🪴 知识地图",
+    pageTitle: "🌱 知识地图",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
