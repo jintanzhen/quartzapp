@@ -17,8 +17,8 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     // 这通常是您网站的已部署URL（例如，此网站的quartz.jzhao.xyz）。不要包含协议（即https://）或任何前导或尾随斜杠。
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "map.seektruth.group",
+    ignorePatterns: ["private", "templates", ".obsidian","Excalidraw"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

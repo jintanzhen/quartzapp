@@ -15,6 +15,7 @@
     "quartz": "./quartz/bootstrap-cli.mjs",
     "dev":"npx quartz build --serve",
     "docs": "npx quartz build --serve -d docs",
+    "deploy":"npx quartz sync",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx ./quartz/util/path.test.ts && tsx ./quartz/depgraph.test.ts",
